@@ -30,10 +30,10 @@ jobs:
         uses: aquasecurity/tfsec-sarif-action@9a83b5c3524f825c020e356335855741fd02745f
         with:
           sarif_file: tfsec.sarif
-      - name: "Create Flow"
-        env:
-            Vars: Hello
-        run: echo "${Vars}"
+      #- name: "Create Flow"
+       # env:
+        #    Vars: Hello
+      - run: echo "${Vars}"
     #  - name: Upload SARIF file
      #   uses: github/codeql-action/upload-sarif@v2
       #  with:
