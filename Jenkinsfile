@@ -16,9 +16,9 @@ pipeline {
                     // Connect to remote instance using RDP
                     
                        
-                       powershell '''
-                                      test.ps1                       
-                                   '''
+                       powershell("test.ps1")
+                                                             
+                              
                             
                             
                         
