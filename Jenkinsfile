@@ -17,7 +17,7 @@ pipeline {
                     
                        
                        powershell '''
-                                      .\test.ps1                       
+                                      test.ps1                       
                                    '''
                             
                             
