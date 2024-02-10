@@ -16,14 +16,10 @@ pipeline {
                     // Connect to remote instance using RDP
                     
                        
-                       PowerShell(". '.\\test.ps1'")
-                                                             
-                              
-                            
-                            
-                        
-                        
-                
+                       PowerShell '''
+                                   .\\test.ps1
+                                   '''
+                     
                 }
             }
         }
