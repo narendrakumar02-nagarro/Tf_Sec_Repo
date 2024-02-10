@@ -6,4 +6,4 @@ $creds = new-object -typename System.Management.Automation.PSCredential -argumen
 #echo $creds
 $sest = New-PSSession -ComputerName "13.233.43.55"
 # echo $sest
-Copy-Item "C:\\sitecore\\InstallARM.ps1" -Destination "C:\\test" -ToSession $sest 
+Copy-Item "C:\\sitecore\\InstallARM.ps1" -Destination "C:\\test" 
