@@ -4,6 +4,6 @@ $pw = convertto-securestring -AsPlainText -Force -String 0Gg-u3NvIPWEpJYvyRlgerZ
 # echo $creds
 $creds = new-object -typename System.Management.Automation.PSCredential -argumentlist "Administrator",$pw
 #echo $creds
-$sest = New-PSSession -ComputerName "13.233.43.55" -Credential $creds
+$sest = New-PSSession -ComputerName "13.233.43.55"
 # echo $sest
 Copy-Item "C:\\sitecore\\InstallARM.ps1" -Destination "C:\\test" -ToSession $sest 
